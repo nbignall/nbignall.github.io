@@ -10,7 +10,9 @@
   height: 8px;
   width: 8px;
   transform: rotate(-45deg);
-
+  animation-name: pinks;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 .css-heart::after {
   background-color: pink;
@@ -22,6 +24,9 @@
   height: 8px;
   top: 0px;
   left: 4px;
+  animation-name: pinks;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 .css-heart::before {
   content: "";
@@ -33,4 +38,26 @@
   height: 8px;
   top: -4px;
   left: 0px;
+  animation-name: pinks;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pinks {
+  0% {
+    background-color: lightpink;
+  }
+  25% {
+    background-color: pink;
+  }
+  50% {
+    background-color: hotpink;
+  }
+  75% {
+    background-color: pink;
+  }
+  100% {
+    background-color: lightpink;
+  }
+
 }
