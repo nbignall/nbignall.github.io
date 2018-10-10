@@ -1,0 +1,35 @@
+.heart {
+  display:  inline-block;
+  /*position: static;
+  margin: auto;*/
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: pink;
+  height: 8px;
+  width: 8px;
+  transform: rotate(-45deg);
+}
+.heart::after {
+  background-color: pink;
+  display: inline-block;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0px;
+  left: 4px;
+}
+.heart::before {
+  content: "";
+  display: inline-block;
+  background-color: pink;
+  border-radius: 50%;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: -4px;
+  left: 0px;
+}
